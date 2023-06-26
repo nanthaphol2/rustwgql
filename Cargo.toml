@@ -1,0 +1,29 @@
+[package]
+name = "rustgql"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+actix-web-lab = "0.18.4"
+actix-cors = "0.6.1"
+actix-service = "2.0.2"
+juniper = "0.15"
+dotenv = "0.15.0"
+env_logger = "0.9"
+futures = "0.3.21"
+log = "0.4"
+serde = {version = "^1.0",features = ["derive"]}
+serde_json = "1"
+tokio-postgres = {version = "0.7.7" ,features = ["with-chrono-0_4"]}
+tokio = "1.17.0"
+chrono = "0.4.19"
+config = "0.13.1"
+deadpool-postgres = { version = "0.10.1", features = ["serde"] }
+derive_more = "0.99.2"
+tokio-pg-mapper = "0.2.0"
+tokio-pg-mapper-derive = "0.2.0"
+sha2 = "0.10.2"
+jsonwebtoken = "8.1.0"
